@@ -1,0 +1,154 @@
+body {
+    margin: 0px;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px;
+}
+
+.leftside {
+    display: flex;
+}
+
+.nav > .leftside > div {
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.navlink {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.navlink a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+/* .navlink :hover {
+    border-bottom: 1px solid black;
+}
+
+.navlink a :hover {
+    color: black;
+} */
+
+.activenavlink {
+    border-bottom: 1px solid black;
+}
+
+.activenavlink a {
+    color: black !important;
+}
+
+
+.brand {
+    background-size: 100%;
+    background-image: linear-gradient(to right, red,blue,black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+.portfolioitems {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolioitem {
+    position: relative;
+}
+
+.portfolioimgbg {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imgtxt {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+
+ .logo img {
+    width: 50%;
+    margin-bottom: 20px;
+}
+.imgtxt .subtitle {
+    transition: 1s;
+    color: transparent;
+    font-weight: 600;
+}
+
+.imgtxt:hover .subtitle {
+    font-weight: 600;
+    color: lightseagreen;
+}  
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+.twocolumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profileimage img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.profilecontent {
+    padding:30px;
+}
+
+.profilecontent h3 {
+    color: lightseagreen;
+}
+
+.profilecontent >  h3::first-letter {
+    font-size: 2em;
+}
+
+h2 {
+    padding-top: 150px;
+    padding-left: 260px;
+    background-size: 100%;
+    background-image: linear-gradient(to right,orangered,purple,yellow);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+
+}
+
